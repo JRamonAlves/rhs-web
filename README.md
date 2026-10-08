@@ -61,6 +61,12 @@ docker compose up -d
 
 The example hostname is a placeholder, not a public RHS deployment. Configure it behind private Tailnet access controls. Production assets are served by Nginx; Vite development and preview servers are local tools.
 
+## License
+
+MIT, see [LICENSE](LICENSE). You may study, use, modify, and redistribute this project, including commercially, while preserving the copyright and license notice.
+
+The shadcn-derived code retains its upstream [MIT notice](THIRD_PARTY_LICENSES/shadcn-MIT.txt). Other dependencies retain their own licenses.
+
 ## Limitations
 
 - The application has no per-user identity or authorization. Connected devices share the clipboard key.
