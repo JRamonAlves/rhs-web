@@ -1,0 +1,10 @@
+services:
+  rhs-land:
+    build:
+      context: .
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8080}
+    image: rhs-web:local
+    ports:
+      - "127.0.0.1:8090:80"
+    restart: unless-stopped
